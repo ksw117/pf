@@ -16,11 +16,31 @@
     display: flex; flex-wrap: wrap; flex-direction: column; justify-content: center;
     transition: .3s ease;     cursor: pointer;
     background: url(../images/work_btn.png) no-repeat center / cover;
-}
-.work_btn{color: #1E1E1E;}
 
-.work_btn:hover{background: #1E1E1E;}
-.work_btn:hover p{color: #F6F6F6;}
+    position: relative;
+    overflow: hidden;
+}
+
+.work_btn p {
+    color: #1E1E1E; z-index: 2;
+    transition: color 0.8s ease;
+}
+
+.work_btn.active p {
+    color: #F6F6F6;
+}
+
+.work_btn span {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: #1E1E1E;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 0.8s ease, height 0.8s ease;
+}
+
 
 .contact_btn{
     font-size: 40px; font-family: "Walter Turncoat", cursive; text-transform: uppercase;
@@ -37,7 +57,7 @@
 }
 .contact_btn p {
     color: #1E1E1E; z-index: 2;
-    transition: color 0.1s ease;
+    transition: color 0.8s ease;
 }
 
 .contact_btn.active p {

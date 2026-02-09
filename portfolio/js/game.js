@@ -31,7 +31,7 @@ const canvas = document.getElementById('gameCanvas');
     // Frame 1: Running
     const SPRITE_CAT_RUN_1 = [
         "011000000000000000000",
-        "111000000000100001000",
+        "111000000001000010000",
         "11000000001110011100",
         "11000000001111111100",
         "11100000011111111110",
@@ -53,7 +53,7 @@ const canvas = document.getElementById('gameCanvas');
     // Frame 2: Running (legs in different position)
     const SPRITE_CAT_RUN_2 = [
         "011000000000000000000",
-        "111000000000100001000",
+        "111000000001000010000",
         "11000000001110011100",
         "11000000001111111100",
         "11100000011111111110",
